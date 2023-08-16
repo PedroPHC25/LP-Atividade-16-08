@@ -1,9 +1,11 @@
 import numpy as np
-from ex_1 import array_soma
+from ex_1 import funcao_1
 
-array_redimensionado = array_soma.reshape(2, 3)
-array_float = array_redimensionado.astype(float)
-array_transposta = array_float.transpose()
 
-print(array_float)
-print(array_transposta)
+def funcao_2(lista1, lista2, m, n):
+    array_soma = funcao_1(lista1, lista2)
+    array_redimensionado = array_soma.reshape(m, n)
+    array_float = array_redimensionado.astype(float)
+    array_transposta = array_float.transpose()
+    
+    return array_transposta
