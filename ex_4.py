@@ -16,4 +16,5 @@ def funcao_4(minimo, maximo, numero_de_elementos):
     for indice in indices_intersecao_array5:
         array5_removido = np.delete(array5, indice)
     
-    print(array5, array6, intersecao, indices_intersecao_array5, indices_intersecao_array6, array5_removido)
+    return [array5, array6, intersecao, indices_intersecao_array5, indices_intersecao_array6, array5_removido]
+    print([array5, array6, intersecao, indices_intersecao_array5, indices_intersecao_array6, array5_removido])
